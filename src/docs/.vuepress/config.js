@@ -1,9 +1,9 @@
 module.exports = {
-  base: '/docs/',
-  dest: './docs',
+  base: '/collection/',
+  dest: './collection',
 
-  title: 'documents_collection',
-  description: '我的文档收藏集',
+  title: 'Collection',
+  description: '收藏集',
   themeConfig: {
     nav: [
       {
@@ -12,8 +12,7 @@ module.exports = {
           {
             text: '',
             items: [
-              { text: 'Vue', link: '/frameworks/vue/' },
-              { text: 'React', link: '/frameworks/react/' }
+              { text: 'Vue', link: '/frameworks/vue/' }
             ],
           },
         ],
@@ -29,7 +28,18 @@ module.exports = {
             ],
           },
         ],
-        sidebar: 'auto'
+      },
+      {
+        text: '传送门',
+        items: [
+          {
+            text: '我的',
+            items: [
+              { text: 'Vue', link: '/frameworks/vue/' },
+              { text: 'React', link: '/frameworks/react/' }
+            ],
+          },
+        ],
       },
     ],
     evergreen: true,
